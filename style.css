@@ -5,7 +5,7 @@
 #aviso{
   display: none;
   position: fixed;
-  top:10%;
+  top:70px;
   left:10px;
   max-width:650px;
   min-width:100px;
