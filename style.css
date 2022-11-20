@@ -24,7 +24,7 @@ header,main,footer{
 header{
   background-color: black;
   color:white;
-  padding: 5px;
+  padding: 10px 5px;
   position: sticky;
   top:-1px;
 }
@@ -94,7 +94,7 @@ span,#atual-eq,#aviso{
 footer{
   background-color: black;
   color:gray;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 footer:hover{
