@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  transition: .7s;
+}
+#aviso{
+  display: none;
+  position: fixed;
+  top:40%;
+  left:10%;
+  max-width:650px;
+  min-width:100px;
+  padding: 10px;
+  box-shadow:2px 2px 3px rgb(0,0,0,0.257);
+  background-color: black;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+}
+header,main,footer{
+  width:100%;
+}
+
+header{
+  background-color: black;
+  color:white;
+  padding: 5px;
+  position: sticky;
+  top:-1px;
+}
+
+header img{
+  width: 30px;
+  height:20px;
+  margin:5px;
+}
+
+header span{
+  font:bold 1.2em monospace;
+  color:lightgray;
+}
+
+section{
+  max-width:700px;
+  min-width: 150px;
+  margin: 5px auto;
+  padding: 10px;
+  border-left:2px solid teal;
+  border-bottom: 2px solid teal;
+}
+section p{
+ width:100%;
+}
+input{
+  width:100%;
+  padding: 3px;
+  outline:none;
+  border: none;
+  box-shadow: 2px 2px 3px rgb(0,0,0,0.257);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-family:monospace;
+  text-align: center;
+}
+input:hover,input:focus{
+  background-color: white;
+  box-shadow: none;
+  border-bottom: 3px solid green;
+}
+span,#atual-eq,#aviso{
+  font-weight: bold;
+}
+.eq-m{
+  color:red;
+}
+
+#msg{
+  font-style: italic;
+  font-size: .7em;
+  font-weight: bold;
+}
+#solve{
+  font:bold 1.02em monospace;
+  color:teal;
+  background-color: white;
+}
+#solve:focus{
+  margin:auto;
+}
+footer{
+  background-color: black;
+  color:gray;
+  padding: 10px;
+}
+
+footer:hover{
+  color:lightgray;
+}
+
+a{
+  text-decoration: none;
+  cursor:pointer;
+  color:inherit;
+}
+footer p{
+  text-align: left;
+  font:italic 0.7em monospace;
+  margin:0px;
+}
+a:visited{
+  color:inherit;
+}
+a:hover{
+  color:green;
+}
+
+hr{
+  margin:0px;
+}
+
+
+#processo{
+  width:100%;
+  padding: 5px;
+  background-color: aliceblue;
+  font-family: monospace;
+  letter-spacing:-2px;
+  color:darkgreen;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgb(0,0,0,0.157);
+}
+#processo *{
+  font-weight: normal;
+}
+#processo p{
+  margin:0px;
+  text-align: center;
+}
+#delta-fp{
+  border-top:2px solid darkgreen;
+  padding-right: 7px;
+  padding: 2.1px 5px;
+  margin-left: -0.2px;
+  font-size:0.95em;
+}
+.raiz{
+  font-size:1.4em;
+}
+.c-raiz{
+  padding:1px 3px;
+  margin-left: -0.2px;
+  border-top: 2px solid darkgreen;
+}
+#m-m{
+  border-bottom: 1.5px solid darkgreen;
+  text-align: center;
+  font-family: sans-serif;
+  margin:5px;
+};

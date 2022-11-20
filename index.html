@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve Me</title>
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <link rel="stylesheet" href="res/style.css">
+    <script src="cdn_modules/jquery@3.6.1/jquery.min.js"></script>
+    <script type="module" src="system/solve.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+  <p id="aviso">
+    O nosso sistema só resolve equações completas do tipo    <span class="eq-m">a</span>x<sup>2</sup> + <span class="eq-m">b</span>x + <span class="eq-m">c</span> = 0!
+  </p>
+  <header>
+    <img src="icons/logo.png" alt="logo"><span>Solve Equation</span>
+  </header>
+  <main>
+    <section id="result">
+      <p id="atual-eq">
+        (<span class="eq-m" id="a">a</span>)x<sup>2</sup> + (<span class="eq-m" id="b">b</span>)x + (<span class="eq-m" id="c">c</span>) = 0
+      </p>
+        
+    <div id="processo">
+      
+      <p id="f-part">
+        -(<span id="f-b-fp">b</span>)<span id="m-m"> + </span><span class="raiz">√</span><span id="delta-fp">(<span id="s-b-fp">b</span>)<sup>2</sup> - 4.(<span id="f-a-fp">a</span>).(<span id="c-fp">c</span>)</span>
+        <hr>
+        <p>2.(<span id="s-a-fp">a</span>)</p>
+      </p><br>
+      
+      <p id="delta">
+        ∆ = (<span id="b-e">b</span>)<sup>2</sup> - 4.(<span id="a-e">a</span>).(<span id="c-e">c</span>)
+        <br>
+        ∆ = (<span id="fm-e">?</span>) - (<span id="sm-e">?</span>)
+        <br>
+        ∆ = <span id="delta-e">?</span>
+      </p><br>
+      
+      <p id="s-part">
+        x' = (<span id="fb-sp">(-b)</span> + <span class="raiz">√</span><span class="c-raiz" id="f-delta-sp">∆</span>) / <span id="fd-sp">(2.(a))</span>
+        <br>
+       x" = (<span id="sb-sp">(-b)</span> - <span class="raiz">√</span><span id="s-delta-sp" class="c-raiz">∆</span>) / <span id="sd-sp">(2.(a))</span>
+        <br><br>
+        <span>x' = <span id="x1">?</span></span>
+        <br>
+        <span>x" = <span id="x2">?</span></span>
+      </p>
+      
+    </div>
+      <br>
+      <p id="msg">...</p>
+      
+    </section>
+    <section id="eq">
+      <p>
+        
+        <input onblur="restaure_cor(0)" placeholder="Coeficiente a..." type="number" name="m-a" id="m-a" min="1"/>
+      </p>
+      <p>
+       
+        <input onblur="restaure_cor(1)" placeholder="Coeficiente b..." type="number" name="m-b" id="m-b" min="1">
+      </p> 
+      <p>
+        
+        <input onblur="restaure_cor(2)" placeholder="Coeficiente c..." type="number" name="m-c" id="m-c" min="1">
+      </p>
+      <p style="text-align: center;">
+        <input id="solve" type="button" value="Resolver" >
+      </p>
+    </section>
+</main>
+<footer>
+  <p>&copy;Todos os direitos reservados ao <a href="https://github.com/Mikeprogrammer973/">Mike Pascal</a></p>
+</footer>
+
+<
+
+
+</body>
+</html>
+<script>
+
+//Mostrar aviso
+$("#aviso").show(1000)
+setTimeout(()=>{
+  $("#aviso").hide(500)
+},4000)
+
+ //Obter span dos ms-eq
+ var m_eq = 
+  [
+    document.getElementById("a"),
+    document.getElementById("b"),
+    document.getElementById("c")
+  ]
+
+function restaure_cor(index)
+{
+  document.getElementById("msg").innerHTML="..."
+  if(isNaN(m_eq[index].innerHTML))
+  {
+    m_eq[index].style.color="red"
+    return
+  }
+  m_eq[index].style.color="teal"
+}
+
+
+</script>
