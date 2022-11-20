@@ -5,8 +5,8 @@
 #aviso{
   display: none;
   position: fixed;
-  top:40%;
-  left:10%;
+  top:10%;
+  left:1%;
   max-width:650px;
   min-width:100px;
   padding: 10px;
